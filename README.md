@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Citação Inspiradora</title>
+    <title>Saudação Personalizada</title>
 </head>
 <body>
 
+    <button onclick="saudacaoPersonalizada()">Clique aqui</button>
+
     <script>
-        window.alert("O único lugar onde o sucesso vem antes do trabalho é no dicionário. - Albert Einstein");
+        function saudacaoPersonalizada() {
+            alert("Olá! Seja muito bem-vindo(a), tenha um dia incrível!");
+        }
     </script>
 
 </body>
-</html>        
+</html>
+
 
