@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saudação Personalizada</title>
+    <title>inicio</title>
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
+ 
+<div class="form-container">
+    <h2>Formulário de Contato</h2>
 
-    <button onclick="saudacaoPersonalizada()">Clique aqui</button>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" required>
 
-    <script>
-        function saudacaoPersonalizada() {
-            alert("Olá! Seja muito bem-vindo(a), tenha um dia incrível!");
-        }
-    </script>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="Digite seu e-mail" required>
 
+        <label for="texto">Mensagem:</label>
+        <textarea id="texto" rows="4" placeholder="Digite sua mensagem" required></textarea>
+
+        <button type="button" onclick="enviarFormulario()">Enviar</button>
+    </form>
+
+    <p id="mensagem"></p>
+</div>
+
+<script src="./js/script.js"></script>
 </body>
 </html>
-
-
