@@ -10,6 +10,7 @@
 
     <div class="container">
         <h1>Excluir Item</h1>
+        <p>Clique no botão abaixo para excluir o item.</p>
         <button onclick="confirmarExclusao()">Excluir Item</button>
     </div>
 
