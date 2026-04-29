@@ -1,33 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inicio</title>
+    <title>Excluir Item</title>
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 <body>
- 
-<div class="form-container">
-    <h2>Formulário de Contato</h2>
 
-    <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" placeholder="Digite seu nome" required>
+    <div class="container">
+        <h1>Excluir Item</h1>
+        <button onclick="confirmarExclusao()">Excluir Item</button>
+    </div>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" placeholder="Digite seu e-mail" required>
-
-        <label for="texto">Mensagem:</label>
-        <textarea id="texto" rows="4" placeholder="Digite sua mensagem" required></textarea>
-
-        <button type="button" onclick="enviarFormulario()">Enviar</button>
-    </form>
-
-    <p id="mensagem"></p>
-</div>
-
-<script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
