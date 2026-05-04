@@ -6,7 +6,7 @@
     <title>Atividade LET - Soma de Dois Números</title>
 </head>
 <body>
-    <h1>Atividade LET - Soma de Dois Números</h1>
+    <h1>Soma de Dois Números</h1>
 
     <script>
         let numero1 = Number(prompt("Digite o primeiro número:"));
@@ -16,7 +16,7 @@
 
         alert("A soma dos números é: " + soma);
 
-        document.write("<h2>Resultado: " + soma + "</h2>");
+        document.write("Resultado: " + soma);
     </script>
 </body>
 </html>
