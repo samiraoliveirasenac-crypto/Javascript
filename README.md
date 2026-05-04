@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho de Compras</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Atividade LET - Soma de Dois Números</title>
 </head>
 <body>
+    <h1>Atividade LET - Soma de Dois Números</h1>
 
-    <div class="container">
-        <h1>Adicionar ao Carrinho</h1>
-        <p>Clique no carrinho para adicionar o item.</p>
+    <script>
+        let numero1 = Number(prompt("Digite o primeiro número:"));
+        let numero2 = Number(prompt("Digite o segundo número:"));
 
-        <img src="./img/cart_icon.png" alt="Carrinho" class="carrinho" onclick="confirmarCarrinho()">
-    </div>
+        let soma = numero1 + numero2;
 
-    <script src="./js/script.js"></script>
+        alert("A soma dos números é: " + soma);
+
+        document.write("<h2>Resultado: " + soma + "</h2>");
+    </script>
 </body>
 </html>
