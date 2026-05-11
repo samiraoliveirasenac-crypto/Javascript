@@ -3,41 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiplicação de Números</title>
+    <title>Projeto - Tela de Login com Bootstrap</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-    <h1>Sistema de Multiplicação</h1>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="login-box shadow-lg p-5 rounded-4">
 
-    <label>Digite seu nome:</label>
-    <input type="text" id="nome"><br><br>
+            <!-- Nome do Projeto -->
+            <h2 class="text-center mb-2">Projeto</h2>
 
-    <label>Digite o primeiro número:</label>
-    <input type="number" id="num1"><br><br>
+            <!-- Nome da Tela -->
+            <h4 class="text-center mb-4">Tela de Login</h4>
 
-    <label>Digite o segundo número:</label>
-    <input type="number" id="num2"><br><br>
+            <form>
+                <!-- Campo de E-mail -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input 
+                        type="email" 
+                        class="form-control" 
+                        id="email" 
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+                </div>
 
-    <label>Digite o terceiro número:</label>
-    <input type="number" id="num3"><br><br>
+                <!-- Campo de Senha -->
+                <div class="mb-4">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input 
+                        type="password" 
+                        class="form-control" 
+                        id="senha" 
+                        placeholder="Digite sua senha"
+                        required
+                    >
+                </div>
 
-    <button onclick="calcular()">Calcular</button>
+                <!-- Botão -->
+                <button 
+                    type="button" 
+                    class="btn btn-primary w-100"
+                    onclick="entrar()"
+                >
+                    Entrar
+                </button>
+            </form>
 
-    <h2 id="resultado"></h2>
+        </div>
+    </div>
 
-    <script>
-        function calcular() {
-            let nome = document.getElementById("nome").value;
-            let num1 = Number(document.getElementById("num1").value);
-            let num2 = Number(document.getElementById("num2").value);
-            let num3 = Number(document.getElementById("num3").value);
-
-            const multiplicacao = num1 * num2 * num3;
-
-            document.getElementById("resultado").innerHTML =
-                "Olá, " + nome + "! O resultado da multiplicação é: " + multiplicacao;
-        }
-    </script>
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
 
 </body>
 </html>
