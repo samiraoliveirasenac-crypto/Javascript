@@ -3,65 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto - Tela de Login com Bootstrap</title>
+    <title>Tela de Registro com Bootstrap</title>
 
-    <!-- Bootstrap CDN -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- CSS Externo -->
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container d-flex justify-content-center align-items-center vh-100">
-        <div class="login-box shadow-lg p-5 rounded-4">
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
 
-            <!-- Nome do Projeto -->
-            <h2 class="text-center mb-2">Projeto</h2>
+        <div class="card shadow-lg p-4 registro-box">
 
-            <!-- Nome da Tela -->
-            <h4 class="text-center mb-4">Tela de Login</h4>
+            <h1 class="text-center text-primary mb-4">
+                Tela de Registro
+            </h1>
 
-            <form>
-                <!-- Campo de E-mail -->
+            <form id="formulario">
+
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                </div>
+
                 <div class="mb-3">
                     <label for="email" class="form-label">E-mail</label>
-                    <input 
-                        type="email" 
-                        class="form-control" 
-                        id="email" 
-                        placeholder="Digite seu e-mail"
-                        required
-                    >
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
                 </div>
 
-                <!-- Campo de Senha -->
-                <div class="mb-4">
-                    <label for="senha" class="form-label">Senha</label>
-                    <input 
-                        type="password" 
-                        class="form-control" 
-                        id="senha" 
-                        placeholder="Digite sua senha"
-                        required
-                    >
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
                 </div>
 
-                <!-- Botão -->
-                <button 
-                    type="button" 
-                    class="btn btn-primary w-100"
-                    onclick="entrar()"
-                >
-                    Entrar
-                </button>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        Enviar
+                    </button>
+                </div>
+
             </form>
 
+            <div id="resposta" class="alert alert-success mt-4 d-none text-center">
+                Formulário enviado com sucesso!
+            </div>
+
         </div>
+
     </div>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- JavaScript -->
-    <script src="./js/script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
