@@ -3,62 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Registro com Bootstrap</title>
+    <title>Navbar Empresa</title>
 
-    <!-- Bootstrap CSS -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container">
 
-        <div class="card shadow-lg p-4 registro-box">
+            
+            <a class="navbar-brand" href="#">Logo</a>
 
-            <h1 class="text-center text-primary mb-4">
-                Tela de Registro
-            </h1>
+            
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <form id="formulario">
+            
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto">
 
-                <div class="mb-3">
-                    <label for="nome" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
-                </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
 
-                <div class="mb-3">
-                    <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
-                </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
 
-                <div class="mb-3">
-                    <label for="mensagem" class="form-label">Mensagem</label>
-                    <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
-                </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
 
-                <div class="d-grid">
-                    <button type="submit" class="btn btn-primary btn-lg">
-                        Enviar
-                    </button>
-                </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
 
-            </form>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
 
-            <div id="resposta" class="alert alert-success mt-4 d-none text-center">
-                Formulário enviado com sucesso!
+                </ul>
             </div>
 
         </div>
+    </nav>
 
+    
+    <div class="container-fluid">
     </div>
 
-    <!-- Bootstrap JS -->
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
 
 </body>
 </html>
+
