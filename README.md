@@ -5,7 +5,7 @@
 $host = "localhost";
 $usuario = "root";
 $senha = "senac";
-$banco = "atividade17soma";
+$banco = "atividade18multiplicacao";
 $porta = "3307";
 
 $conexao = new mysqli($host, $usuario, $senha, $banco, $porta);
@@ -15,6 +15,7 @@ if (!$conexao) {
 }
 echo "Conexão realizada com sucesso!";
 ?>
+
 
 <?php 
 
@@ -26,11 +27,11 @@ $numero3 = 10;
 
 $resultado = $numero1 + $numero2 + $numero3;
 
-$sql =" INSERT INTO somas (numero1, numero2, numero3, resultado) VALUES ($numero1, $numero2, $numero3, $resultado)";
+$sql =" INSERT INTO multiplicacão (numero1, numero2, numero3, resultado) VALUES ($numero1, $numero2, $numero3, $resultado)";
 if ($conexao->query($sql)) {
-    echo "<br> Dados da soma dos três números foram salvos com sucesso!";
+    echo "<br> Dados da multiplicação dos três números foram salvos com sucesso!";
 } else {
-    echo "<br> Erro ao salvar os dados da soma!";
+    echo "<br> Erro ao salvar os dados da multiplicação!";
 }
 
 ?>
